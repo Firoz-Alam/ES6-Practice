@@ -3,6 +3,9 @@ class Student{
         this.id = id;
         this.name = name;
     }
+    fullName(){
+        return this.id + " "+ this.name;
+    }
 }
 
 const student1 = new Student(2,"Firoz");
@@ -11,4 +14,4 @@ const student3 = new Student(4,"Rakib");
 
 console.log(student1.id,student1.name);
 console.log(student2);
-console.log(student3);
+console.log(student3.fullName());
