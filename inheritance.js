@@ -6,9 +6,15 @@ class ParentName{
 
 class ChildName extends ParentName{
     constructor(name){
+        super();
         this.name = name;
+    }
+    getFullName(){
+        return this.name +" "+this.fatherName;
     }
 }
 
 const result = new ChildName("Firoz");
-console.log(result);
+const result2 = new ChildName("Topu")
+console.log(result.getFullName());
+console.log(result2.getFullName());
